@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{6920D4BE-E586-4D0E-A2AE-C8C5B91B7E4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingInterviewPreparation", "CodingInterviewPreparation\CodingInterviewPreparation.csproj", "{6920D4BE-E586-4D0E-A2AE-C8C5B91B7E4E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
