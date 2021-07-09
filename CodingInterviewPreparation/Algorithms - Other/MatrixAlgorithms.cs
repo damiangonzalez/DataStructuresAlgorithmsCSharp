@@ -1,11 +1,12 @@
 using System;
-using NUnit.Framework;
 using System.Linq;
+using NUnit.Framework;
 
-namespace Algorithms.Data_Structures
+namespace Algorithms
 {
-    public class Array
+    public class MatrixAlgorithms
     {
+        private string[][] twoDim = new string [][] {  };
         string[] cars = new[] {"Volvo", "BMW", "Ford", "Mazda"};
         int[] myNums = new[] {10, 20, 30, 40};
 

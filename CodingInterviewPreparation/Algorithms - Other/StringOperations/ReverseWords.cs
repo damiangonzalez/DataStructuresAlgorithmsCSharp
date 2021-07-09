@@ -1,16 +1,16 @@
 using System;
-using System.Collections.Generic;
 using System.Text;
 using NUnit.Framework;
 
 namespace Algorithms.StringOperations
 {
+    // https://ankitsharmablogs.com/csharp-coding-questions-for-technical-interviews/
     public class ReverseWords
     {
-        public string ReverseTheWords(string str)
+        public static string ReverseTheWords(string str)
         {
             if (str == null || string.IsNullOrWhiteSpace(str)) return str;
-            
+
             string[] words = str.Split(" ");
             StringBuilder reversedSentence = new StringBuilder();
             for (int i = words.Length - 1; i >= 0; i--)
@@ -21,11 +21,11 @@ namespace Algorithms.StringOperations
             return reversedSentence.ToString().Trim();
         }
 
-        //     public static void Main()
+        // public static void Main()
         [Test]
         public void ReverseString()
         {
-            Console.WriteLine(ReverseTheWords("Welcome to Csharp corner").Equals("corner Csharp to Welcome")); 
+            Console.WriteLine(ReverseTheWords("Welcome to Csharp corner").Equals("corner Csharp to Welcome"));
             Console.WriteLine(ReverseTheWords("").Equals(""));
             Console.WriteLine(ReverseTheWords(null) == null);
             Console.WriteLine(ReverseTheWords("a").Equals("a"));
