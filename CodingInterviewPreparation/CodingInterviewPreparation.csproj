@@ -14,4 +14,9 @@
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Algorithms - Other\LinkedListOperations" />
+      <Folder Include="Algorithms - Other\OtherSorting" />
+    </ItemGroup>
+
 </Project>

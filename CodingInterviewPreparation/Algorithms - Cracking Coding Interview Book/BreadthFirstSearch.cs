@@ -8,7 +8,7 @@ namespace Algorithms
 {
     public class BreadthFirstSearch
     {
-        public class Employee
+        internal class Employee
         {
             public Employee(string name)
             {
@@ -37,7 +37,7 @@ namespace Algorithms
 
         public class BreadthFirstAlgorithm
         {
-            public Employee BuildEmployeeGraph()
+            internal Employee BuildEmployeeGraph()
             {
                 Employee Eva = new Employee("Eva");
                 Employee Sophia = new Employee("Sophia");
@@ -61,7 +61,7 @@ namespace Algorithms
                 return Eva;
             }
 
-            public Employee Search(Employee root, string nameToSearchFor)
+            internal Employee Search(Employee root, string nameToSearchFor)
             {
                 Queue<Employee> empQueue = new Queue<Employee>();
                 HashSet<Employee> hashSetEmployeesWeHaveSeen = new HashSet<Employee>();
@@ -89,7 +89,7 @@ namespace Algorithms
                 return null;
             }
 
-            public void TraverseGraph(Employee root)
+            internal  void TraverseGraph(Employee root)
             {
                 Queue<Employee> traverseOrder = new Queue<Employee>();
                 Queue<Employee> empQueue = new Queue<Employee>();
@@ -122,7 +122,7 @@ namespace Algorithms
         }
 
         [Test] // static void Main(string[] args)
-        public void MainTest()
+         void MainTest()
         {
             BreadthFirstAlgorithm breadthFirstAlgorithm = new BreadthFirstAlgorithm();
             Employee root = breadthFirstAlgorithm.BuildEmployeeGraph();
