@@ -15,7 +15,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Algorithms - Other\LinkedListOperations" />
       <Folder Include="Algorithms - Other\OtherSorting" />
     </ItemGroup>
 
