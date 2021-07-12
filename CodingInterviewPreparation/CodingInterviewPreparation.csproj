@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <Folder Include="Algorithms - Other\OtherSorting" />
+      <Folder Include="Algorithms - Other\StacksQueues" />
     </ItemGroup>
 
 </Project>
