@@ -1,16 +1,21 @@
-namespace Algorithms.Data_Structures
+namespace Algorithms
 {
     public class LinkedList
     {
-        internal class Node
+        public class Node
         {
             internal int data;
-            internal Node next;
+            public Node next;
 
             public Node(int d)
             {
                 data = d;
                 next = null;
+            }
+
+            public int getData()
+            {
+                return data;
             }
         }
     }
