@@ -19,40 +19,40 @@ namespace Algorithms
                 }
             }
 
-            private Node head; // remove and add here
+            private Node top; // remove and add here
 
             public bool isEmpty()
             {
-                return head == null;
+                return top == null;
             }
 
             public int peek()
             {
                 // check for null
-                return head.data;
+                return top.data;
             }
 
             public void push(int data)
             {
                 Node node = new Node(data);
-                if (head != null)
+                if (top != null)
                 {
-                    Node oldHead = head;
-                    head = node;
-                    head.next = oldHead;
+                    Node oldHead = top;
+                    top = node;
+                    top.next = oldHead;
                 }
                 else
                 {
-                    head = node;
+                    top = node;
                 }
             }
 
             public int pop()
             {
-                if (head != null)
+                if (top != null)
                 {
-                    int returnValue = head.data;
-                    head = head.next; // assign new head
+                    int returnValue = top.data;
+                    top = top.next; // assign new top
                     
                     return returnValue;
                 }
