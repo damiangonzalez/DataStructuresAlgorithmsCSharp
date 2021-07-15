@@ -17,3 +17,7 @@ https://www.youtube.com/playlist?list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX
 13 Data Structures: Hash Tables  
 14 Data Structures: Solve 'Ransom Note' Using Hash Tables  
 15 Data Structures: Hash Tables  
+
+Also part of   
+Cracking the Coding Interview Tutorial Series  
+https://www.youtube.com/playlist?list=PLI1t_8YX-ApvFsH-DaFmAmdJboAnbg08P  

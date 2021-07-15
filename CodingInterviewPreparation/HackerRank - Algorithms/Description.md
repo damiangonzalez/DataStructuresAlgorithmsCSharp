@@ -17,3 +17,7 @@ https://www.youtube.com/playlist?list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL
 13 Algorithms: Bit Manipulation  
 14 Algorithms: Graph Search, DFS and BFS  
 15 Algorithms: Solve 'Lonley Integer' Using Bit Manipulation  
+
+Also part of   
+Cracking the Coding Interview Tutorial Series  
+https://www.youtube.com/playlist?list=PLI1t_8YX-ApvFsH-DaFmAmdJboAnbg08P  
