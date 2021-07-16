@@ -96,6 +96,9 @@ namespace Algorithms
             myLinkedList.traverse();
             myLinkedList.deleteFirstNodeWithValue(3);
             myLinkedList.traverse();
+            myLinkedList.prepend(9);
+            myLinkedList.prepend(8);
+            myLinkedList.traverse();
         }
     }
 }
