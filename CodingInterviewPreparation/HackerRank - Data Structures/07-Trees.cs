@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace Algorithms
 {
+    // https://www.youtube.com/watch?v=oSWTXtMglKE&list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX&index=7
     public class Trees
     {
         public class BstNode
