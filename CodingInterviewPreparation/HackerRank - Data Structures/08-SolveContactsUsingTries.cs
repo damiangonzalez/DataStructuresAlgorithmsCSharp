@@ -10,7 +10,7 @@ namespace Algorithms
     {
         public class TriesNode
         {
-            private static int numberOfLetters = 26; 
+            private static int numberOfLetters = 26;
             TriesNode[] children = new TriesNode[numberOfLetters];
             private int count = 0;
 
@@ -18,7 +18,7 @@ namespace Algorithms
             {
                 return c - 'a';
             }
-            
+
             private TriesNode getNode(char c)
             {
                 return children[getAlphaIndexOf(c)];
@@ -38,17 +38,17 @@ namespace Algorithms
                 }
             }
 
-            public void add(string s)
+            public void add(string stringToAdd)
             {
-                add(s, 0);
+                add(stringToAdd, 0);
             }
-            
-            public void add(string s, int indexInString)
+
+            public void add(string stringToAdd, int indexInString)
             {
-                if (s.Length == indexInString) return;
                 count++;
-                
-                char currentChar = s[indexInString];
+                if (stringToAdd.Length == indexInString) return;
+
+                char currentChar = stringToAdd[indexInString];
                 Console.WriteLine($"New char add: {currentChar} {indexInString}");
 
                 TriesNode node = getNode(currentChar);
@@ -62,26 +62,26 @@ namespace Algorithms
                     Console.WriteLine($"Node exists: {currentChar} {node.count}");
                 }
 
-                node.add(s, indexInString + 1);
+                node.add(stringToAdd, indexInString + 1);
             }
 
-            public int findCount(string s)
+            public int findCount(string searchString)
             {
-                return findCount(s, 0);
+                return findCount(searchString, 0);
             }
-            
-            public int findCount(string s, int index)
+
+            public int findCount(string searchString, int index)
             {
-                if (s.Length == index)
+                if (searchString.Length == index)
                     return count;
-                
-                TriesNode node = getNode(s[index]);
+
+                TriesNode node = getNode(searchString[index]);
                 if (node == null)
                 {
                     return 0;
                 }
-                
-                return node.findCount(s, index + 1);
+
+                return node.findCount(searchString, index + 1);
             }
         }
 
@@ -92,10 +92,20 @@ namespace Algorithms
             main.add("damian");
             main.add("david");
             main.add("dog");
-            
+            main.add("ashley");
+            main.add("ashton");
+            main.add("alan");
+
             Assert.AreEqual(3, main.findCount("d"));
             Assert.AreEqual(2, main.findCount("da"));
             Assert.AreEqual(1, main.findCount("dav"));
+
+            Assert.AreEqual(3, main.findCount("a"));
+            Assert.AreEqual(2, main.findCount("as"));
+            Assert.AreEqual(2, main.findCount("ash"));
+            Assert.AreEqual(1, main.findCount("al"));
+            Assert.AreEqual(1, main.findCount("ala"));
+            Assert.AreEqual(1, main.findCount("alan"));
         }
     }
 }
