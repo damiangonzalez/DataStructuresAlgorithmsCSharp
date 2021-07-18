@@ -7,6 +7,7 @@ namespace Algorithms
 {
     public class AnagramProblemSolution
     {
+        // https://www.youtube.com/watch?v=3MwRGPPB4tw&list=PLI1t_8YX-Apv-UiRlnZwqqrRT8D1RhriX&index=12
         public int numberNeeded(string firstString, string secondString)
         {
             Dictionary<char, int> firstStringDict = new Dictionary<char, int>();
@@ -17,8 +18,10 @@ namespace Algorithms
 
             int changesNeeded = 0;
             // for each key that exists on only one side, increment by one
-            int keysOnlyInFirst = firstStringDict.Where(x => !secondStringDict.ContainsKey((char) x.Key)).Select(x => x.Value).Sum();
-            int keysOnlyInSecond = secondStringDict.Where(x => !firstStringDict.ContainsKey((char) x.Key)).Select(x => x.Value).Sum();
+            int keysOnlyInFirst = firstStringDict.Where(x => !secondStringDict.ContainsKey((char) x.Key))
+                .Select(x => x.Value).Sum();
+            int keysOnlyInSecond = secondStringDict.Where(x => !firstStringDict.ContainsKey((char) x.Key))
+                .Select(x => x.Value).Sum();
             // for each count that differs, increment by one
             changesNeeded = keysOnlyInFirst + keysOnlyInSecond;
             List<KeyValuePair<char, int>> keysInBoth =
