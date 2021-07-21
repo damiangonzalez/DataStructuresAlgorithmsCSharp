@@ -5,16 +5,17 @@ using NUnit.Framework;
 namespace Algorithms
 {
     // https://www.youtube.com/watch?v=0XgVhsMOcQM&list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL&index=4
-/*
- * Breadth-First Search (BFS)
- * BFS is a bit less intuitive, and many interviewees struggle with the implementation
- * unless they are already familiar with it. The main tripping point is the (false)
- * assumption that BFS is recursive. It's not. Instead, it uses a queue. In BFS, node a
- * visits each of a's neighbors before visiting any of their neighbors.
- * You can think of this as searching level by level out from a.
- * An iterative solution involving a queue usually works best.
- */
-// https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem?h_r=internal-search
+    /*
+     * Breadth-First Search (BFS)
+     * BFS is a bit less intuitive, and many interviewees struggle with the implementation
+     * unless they are already familiar with it. The main tripping point is the (false)
+     * assumption that BFS is recursive. It's not. Instead, it uses a queue. In BFS, node a
+     * visits each of a's neighbors before visiting any of their neighbors.
+     * You can think of this as searching level by level out from a.
+     * An iterative solution involving a queue usually works best.
+     */
+    // https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem?h_r=internal-search
+    // BFS also here: CodingInterviewPreparation/CodingInterviewPreparation/Algorithms - Cracking Coding Interview Book/BreadthFirstSearch.cs
     public class SolveShortestReachUsingBFS
     {
         public class Solution
