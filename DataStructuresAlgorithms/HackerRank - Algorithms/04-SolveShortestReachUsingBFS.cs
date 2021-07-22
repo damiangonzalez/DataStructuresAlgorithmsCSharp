@@ -15,7 +15,7 @@ namespace Algorithms
      * An iterative solution involving a queue usually works best.
      */
     // https://www.hackerrank.com/challenges/ctci-bfs-shortest-reach/problem?h_r=internal-search
-    // BFS also here: CodingInterviewPreparation/CodingInterviewPreparation/Algorithms - Cracking Coding Interview Book/BreadthFirstSearch.cs
+    // BFS also here: DataStructuresAlgorithms/DataStructuresAlgorithms/Algorithms - Cracking Coding Interview Book/BreadthFirstSearch.cs
     public class SolveShortestReachUsingBFS
     {
         public class Solution
