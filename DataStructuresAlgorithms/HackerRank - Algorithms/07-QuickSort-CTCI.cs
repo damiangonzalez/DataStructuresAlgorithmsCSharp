@@ -32,6 +32,7 @@ namespace Algorithms
 
         private int partition(int[] array, int left, int right)
         {
+            // In this case we choose a pivot value in the middle
             int pivot = array[(left + right) / 2];
 
             while (left <= right)
