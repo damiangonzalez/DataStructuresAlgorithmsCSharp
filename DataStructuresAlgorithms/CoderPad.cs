@@ -3,6 +3,7 @@ using NUnitLite;
 using System;
 using System.Reflection;
 
+// CoderPad example test running with NUnit TestCase attribute
 public class Runner {
     public static int Main2(string[] args) {
         return new AutoRun(Assembly.GetCallingAssembly()).Execute(new String[] {"--labels=All"});
