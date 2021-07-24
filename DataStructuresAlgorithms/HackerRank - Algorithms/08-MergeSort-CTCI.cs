@@ -76,15 +76,15 @@ namespace Algorithms
             }
         }
 
-        [Test] // static void Main(string[] args)
-        public void MainTest()
+        [TestCase(new int[] {2, 1, 4, 3}, new int[] {1, 2, 3, 4})]
+        [TestCase(new int[] {2, 1, 3}, new int[] {1, 2, 3})]
+        [TestCase(new int[] {2, 1}, new int[] {1, 2})]
+        [TestCase(new int[] {2}, new int[] {2})]
+        [TestCase(new int[] { }, new int[] { })]
+        public void MainTest(int[] input, int[] expectedOutput)
         {
-            int[] array = new[] {2, 1, 3};
-            mergeSort(array);
-            foreach (int i in array)
-            {
-                Console.WriteLine(i);
-            }
+            mergeSort(input);
+            Assert.AreEqual(expectedOutput, input);
         }
     }
 }

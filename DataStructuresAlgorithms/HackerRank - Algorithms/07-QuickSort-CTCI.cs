@@ -52,7 +52,7 @@ namespace Algorithms
                 }
             }
 
-            return left;
+            return left; // return partition point
         }
 
 
