@@ -2,6 +2,7 @@ using NUnit.Framework;
 
 namespace Algorithms
 {
+    // https://www.youtube.com/watch?v=6Gv8vg0kcHc&list=PLI1t_8YX-ApvMthLj56t1Rf-Buio5Y8KL&index=9
     public class BubbleSort
     {
         public class Solution

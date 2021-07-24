@@ -15,9 +15,4 @@
         <PackageReference Include="NUnitLite" Version="3.13.2" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Algorithms - Other\OtherSorting" />
-      <Folder Include="Algorithms - Other\StacksQueues" />
-    </ItemGroup>
-
 </Project>

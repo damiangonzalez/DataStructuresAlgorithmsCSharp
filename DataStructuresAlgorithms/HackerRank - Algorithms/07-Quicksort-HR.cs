@@ -1,5 +1,4 @@
 using System;
-using Algorithms.StringOperations;
 using NUnit.Framework;
 
 namespace Algorithms
