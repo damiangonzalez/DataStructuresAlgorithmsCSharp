@@ -35,7 +35,7 @@ namespace Algorithms
             return majorityElement.Key;
         }
         
-        [Test] // static void Main(string[] args)
+        [Test] 
         public void MainTest()
         {
             int[] array = new[] {1, 3, 2, 5, 6, 7, 8};

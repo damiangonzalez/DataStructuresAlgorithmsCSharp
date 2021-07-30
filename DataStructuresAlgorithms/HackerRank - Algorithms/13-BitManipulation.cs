@@ -13,8 +13,6 @@ namespace Algorithms
         // shifting
         // masking
         
-        // todo implement these in CSharp
-
         [Test]
         public void MainTest()
         {

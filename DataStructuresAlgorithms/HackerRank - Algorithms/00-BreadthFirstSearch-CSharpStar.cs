@@ -89,7 +89,7 @@ namespace Algorithms
                 return null;
             }
 
-            internal  void TraverseGraph(Employee root)
+            internal void TraverseGraph(Employee root)
             {
                 Queue<Employee> traverseOrder = new Queue<Employee>();
                 Queue<Employee> empQueue = new Queue<Employee>();
@@ -121,18 +121,18 @@ namespace Algorithms
             }
         }
 
-        [Test] // static void Main(string[] args)
-         void MainTest()
+        [Test]
+        void MainTest()
         {
             BreadthFirstAlgorithm breadthFirstAlgorithm = new BreadthFirstAlgorithm();
             Employee root = breadthFirstAlgorithm.BuildEmployeeGraph();
             Console.WriteLine("\nTraverse Graph\n------");
             breadthFirstAlgorithm.TraverseGraph(root);
-            
+
             Console.WriteLine("\nSearch Graph\n------");
             Employee EvaSearch = breadthFirstAlgorithm.Search(root, "Eva");
             Console.WriteLine(EvaSearch == null ? "Employee not found" : "Found: " + EvaSearch.name);
- 
+
             Employee BrianSearch = breadthFirstAlgorithm.Search(root, "Brian");
             Console.WriteLine(BrianSearch == null ? "Employee not found" : "Found: " + BrianSearch.name);
 

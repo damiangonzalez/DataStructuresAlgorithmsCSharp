@@ -90,17 +90,17 @@ namespace Algorithms
             return false;
         }
 
-        [Test] // static void Main(string[] args)
+        [Test]
         public void MainTest()
         {
             // todo fix algorithm to test only for X and O
             char[,] myBoard = new char[,]
             {
-                { 'X', 'O', 'X'},
-                { 'O', 'X', 'O'},
-                { 'X', 'O', 'O'},
+                {'X', 'O', 'X'},
+                {'O', 'X', 'O'},
+                {'X', 'O', 'O'},
             };
-            
+
             Console.WriteLine(IsThereAWinner(myBoard));
         }
     }

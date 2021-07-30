@@ -83,7 +83,7 @@ namespace Algorithms.LinkedListOperations
             }
         }
 
-        [Test] // static void Main(string[] args)
+        [Test] 
         public void MainTest()
         {
             Console.WriteLine("Starting Linked List...");

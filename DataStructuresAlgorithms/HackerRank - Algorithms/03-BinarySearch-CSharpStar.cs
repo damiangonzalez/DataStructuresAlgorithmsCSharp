@@ -60,7 +60,7 @@ namespace Algorithms
             return -1;
         }
 
-        [Test] // static void Main(string[] args)
+        [Test] 
         public void MainTest()
         {
             int[] array = new[] {1, 3, 4, 5, 6, 7, 8};
